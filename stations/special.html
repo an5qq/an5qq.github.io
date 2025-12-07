@@ -55,18 +55,27 @@
             font-weight: bold;
         }
 
-        /* 戻るボタン */
-        .back {
+        .back-btn {
             display: inline-block;
-            margin-left: 10px;
-            text-decoration: none;
+            padding: 10px 18px;
+            border: 2px solid var(--main-color);
+            border-radius: 10px;
             color: var(--main-color);
             font-weight: bold;
+            text-decoration: none;
             font-size: 15px;
+            background: #fff;
+            transition: .2s;
+            margin-left: 10px;
         }
-        .back:hover {
-            text-decoration: underline;
+
+        .back-btn:hover {
+            background: var(--main-color);
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
         }
+
 
     </style>
 </head>
@@ -85,7 +94,7 @@
 
     <tr><td>🐶ファミリーマート 下関あ<span class="orange">るか</span>ぽーと店</td></tr>
 
-    <tr><td>🎸る・それ<span class="orange">れい</span>ゆ 布施店</td></tr>
+    <tr><td>🎸る・そ<span class="orange">れい</span>ゆ 布施店</td></tr>
 
     <tr><td>🍖セブン-イレブン 八幡<span class="orange">力</span>丸店</td></tr>
 
@@ -96,7 +105,7 @@
     <tr><td>🧡<span class="orange">やまと</span> 池袋</td></tr>
 </table>
 
-<a href="../index.html" class="back">← 駅一覧へ戻る</a>
+<a href="../index.html" class="back.btn">← 駅一覧へ戻る</a>
 
 </body>
 </html>
