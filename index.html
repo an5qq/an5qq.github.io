@@ -20,29 +20,29 @@
         h1 {
             text-align: center;
             color: var(--main-color);
-            font-size: 2.2rem;
-            margin-bottom: 30px;
+            font-size: 2.4rem;   /* ←大きくした */
+            margin-bottom: 35px;
         }
 
-        /* グリッド（3列×10行） */
+        /* グリッド（2列 × 15行） */
         .station-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            max-width: 900px;
+            grid-template-columns: repeat(2, 1fr); /* ★2列に変更 */
+            gap: 18px; /* 少し広め */
+            max-width: 700px;
             margin: 0 auto 40px;
         }
 
         /* 通常ボタン */
         .station-grid a {
             display: block;
-            padding: 15px 0;
+            padding: 18px 0;  /* 少し大きく */
             background: #fff;
             border: 2px solid var(--main-color);
             border-radius: 12px;
             text-align: center;
             color: var(--main-color);
-            font-size: 15px;
+            font-size: 17px;       /* ←大きくした */
             font-weight: bold;
             text-decoration: none;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -55,11 +55,11 @@
             transform: translateY(-3px);
         }
 
-        /* 特別編だけ大きいボタン */
+        /* 特別編ボタン（2列グリッドなので横幅全部に） */
         .special {
-            grid-column: 2 / 3; /* 横2つ分 */
-            padding: 20px 0 !important;
-            font-size: 18px !important;
+            grid-column: 1 / 3; /* ★全幅（中央配置と同義） */
+            padding: 22px 0 !important;
+            font-size: 20px !important;
             border-width: 3px;
             border-radius: 16px;
         }
@@ -69,6 +69,7 @@
 <body>
 
 <h1>🚃しょへたから100チア巡り🌟</h1>
+
 <div class="station-grid">
 
     <a href="stations/tokyo.html">東京</a>
@@ -77,41 +78,46 @@
 
     <a href="stations/okachimachi.html">御徒町</a>
     <a href="stations/ueno.html">上野</a>
-    <a href="stations/uguisudani.html">鶯谷</a>
 
+    <a href="stations/uguisudani.html">鶯谷</a>
     <a href="stations/nippori.html">日暮里</a>
+
     <a href="stations/nishinippori.html">西日暮里</a>
     <a href="stations/tabata.html">田端</a>
 
     <a href="stations/komagome.html">駒込</a>
     <a href="stations/sugamo.html">巣鴨</a>
-    <a href="stations/otsuka.html">大塚</a>
 
+    <a href="stations/otsuka.html">大塚</a>
     <a href="stations/ikebukuro.html">池袋</a>
+
     <a href="stations/mejiro.html">目白</a>
     <a href="stations/takadanobaba.html">高田馬場</a>
 
     <a href="stations/shinokubo.html">新大久保</a>
     <a href="stations/shinjuku.html">新宿</a>
-    <a href="stations/yoyogi.html">代々木</a>
 
+    <a href="stations/yoyogi.html">代々木</a>
     <a href="stations/harajuku.html">原宿</a>
+
     <a href="stations/shibuya.html">渋谷</a>
     <a href="stations/ebisu.html">恵比寿</a>
 
     <a href="stations/meguro.html">目黒</a>
     <a href="stations/gotanda.html">五反田</a>
-    <a href="stations/osaki.html">大崎</a>
 
+    <a href="stations/osaki.html">大崎</a>
     <a href="stations/shinagawa.html">品川</a>
+
     <a href="stations/takanawagateway.html">高輪ゲートウェイ</a>
     <a href="stations/tamachi.html">田町</a>
 
     <a href="stations/hamamatsucho.html">浜松町</a>
     <a href="stations/shinbashi.html">新橋</a>
+
     <a href="stations/yurakucho.html">有楽町</a>
 
-    <!-- ★特別編（横3つぶん大きいボタン）★ -->
+    <!-- ★特別編（中央全幅）★ -->
     <a href="stations/special.html" class="special">🌟 特別編 🌟</a>
 
 </div>
